@@ -1,18 +1,58 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E">
-<title>Video Auto Uploader</title></head>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='5' y='5' width='90' height='90' rx='30' fill='white' stroke='black' stroke-width='12'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='55' font-weight='bold' fill='black' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+<title>Video Auto Uploader</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;max-width:760px;margin:0 auto;padding:24px;line-height:1.6;color:#222;}
+header{display:flex;align-items:center;gap:14px;border-bottom:1px solid #ddd;padding-bottom:16px;margin-bottom:24px;}
+header svg{width:48px;height:48px;flex-shrink:0;}
+nav a{margin-right:16px;color:#555;text-decoration:none;font-size:14px;}
+nav{margin-bottom:24px;}
+h2{margin-top:36px;}
+.step{display:flex;gap:12px;margin:14px 0;}
+.step b{min-width:22px;}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid #ddd;font-size:13px;color:#666;}
+footer a{color:#555;}
+</style>
+</head>
 <body>
-<header style="display:flex;align-items:center;gap:12px;">
-<span style="font-size:2.2em;">🎬</span>
+<header>
+<svg viewBox="0 0 100 100"><rect x="5" y="5" width="90" height="90" rx="30" fill="white" stroke="black" stroke-width="12"/><text x="50" y="68" font-family="Arial,sans-serif" font-size="55" font-weight="bold" fill="black" text-anchor="middle">T</text></svg>
 <h1 style="margin:0;">Video Auto Uploader</h1>
 </header>
-<p>Video Auto Uploader lets creators connect their own social media accounts
-(including TikTok, via TikTok Login Kit) and schedule or automate posting
-of their own video content to their own profiles. Each user signs in and
-authorizes their own account through the standard OAuth login flow; we do
-not post on anyone's behalf without their explicit authorization.</p>
+
+<nav>
+<a href="#features">Features</a>
+<a href="#how-it-works">How It Works</a>
+<a href="privacy.html">Privacy Policy</a>
+<a href="terms.html">Terms of Service</a>
+</nav>
+
+<p>Video Auto Uploader is a video publishing tool for creators who post the
+same content across multiple platforms. Instead of uploading a video one
+platform at a time, creators upload once and Video Auto Uploader publishes
+it to every platform they've connected — under each creator's own account,
+using each platform's official login.</p>
+
+<h2 id="features">Features</h2>
 <ul>
-<li><a href="privacy.html">Privacy Policy</a></li>
-<li><a href="terms.html">Terms of Service</a></li>
+<li><strong>Multi-platform publishing</strong> — YouTube, TikTok, Instagram, Threads, Facebook, X (Twitter), and Naver Clip from a single upload.</li>
+<li><strong>Per-user account connections</strong> — every user signs in to their own TikTok (and other platform) accounts via the platform's standard OAuth login. We never use a shared or developer-owned account to publish on a user's behalf.</li>
+<li><strong>Per-platform captions</strong> — set a shared title/description/hashtags, or customize wording for each platform individually.</li>
+<li><strong>Auto first-comment</strong> — optionally post a first comment automatically after the video goes live.</li>
+<li><strong>Upload status tracking</strong> — see the live status of each platform's upload (queued, uploading, done, or error) as it happens.</li>
 </ul>
+
+<h2 id="how-it-works">How It Works</h2>
+<div class="step"><b>1.</b><span>Create an account and connect the platforms you post to. For TikTok, this uses TikTok Login Kit — you're redirected to TikTok's own login page and asked to authorize Video Auto Uploader for your account.</span></div>
+<div class="step"><b>2.</b><span>Upload a video once, and write a title, description, and hashtags (shared across platforms, or customized per platform).</span></div>
+<div class="step"><b>3.</b><span>Video Auto Uploader publishes the video to each connected platform under your own account, and shows you the result and links to each published post.</span></div>
+
+<h2>Who It's For</h2>
+<p>Video Auto Uploader is built for individual creators, small teams, and
+agencies who manage several social accounts and want to save time by
+publishing once instead of repeating the same upload on every platform.</p>
+
+<footer>
+<p>&copy; 2026 Video Auto Uploader — <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="mailto:starmaru@naver.com">Contact</a></p>
+</footer>
 </body></html>
